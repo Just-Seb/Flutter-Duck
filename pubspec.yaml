@@ -29,12 +29,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  camera:
+  camera: ^0.9.4+11
   path_provider:
   path:
-  video_player: ^2.2.18
-  image:
-  ffi:
+  http: ^0.13.4
 
 dev_dependencies:
   flutter_test:
