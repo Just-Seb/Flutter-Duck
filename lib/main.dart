@@ -105,7 +105,9 @@ class TakePictureScreenState extends State<TakePictureScreen> {
             log("got here");
 
             var response = await http
-                .get(Uri.parse("http://a59f-69-196-89-210.ngrok.io/getImage"));
+                // .get(Uri.parse("http://a59f-69-196-89-210.ngrok.io/getImage"));
+                .get(Uri.parse("http://127.0.0.1:5000/getImage"));
+                
             if (response.statusCode == 200) {
               var jsonResponse = convert.jsonDecode(response.body);
               log(jsonResponse);
